@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0pt;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  height: 140px;
+  width: 520px;
+  background-color: teal;
+}
+
+.header-top__container {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  font-size: 1.8em;
+  padding: 0 10px;
+  background: rgb(2, 4, 116);
+}
+
+.words {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.label {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+.words__count {
+  font-size: 1.3em;
+  color: rgb(240, 178, 46);
+  width: 100%;
+  text-align: center;
+}
+
+.current__score {
+  font-size: 1.3em;
+  color: white;
+  position: absolute;
+  top: -100px;
+  left: 140px;
+  text-align: center;
+  background: #e01b1b;
+  width: 70px;
+  transition: all 0.4s ease-in-out;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.total {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.total__score {
+  font-size: 1.5em;
+  color: rgb(240, 178, 46);
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+}
+
+.timer {
+  font-size: 1.3em;
+  color: rgb(240, 178, 46);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 520px;
+  font-size: 49px;
+  background: rgb(82, 124, 238);
+  color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.field {
+  display: flex;
+  height: 520px;
+  width: 520px;
+  padding: 10px;
+  background-color: teal;
+  box-sizing: border-box;
+  font-weight: 600;
+  font-size: 46px;
+  background-color: #a6cef3;
+}
+
+.field__wrapper {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.letter__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  margin: 5px;
+  background-color: white;
+
+  box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
+    0px 2px 1px rgb(0 0 0 / 20%);
+}
+
+.letter {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.canvas {
+  position: absolute;
+}
+
+.active-letter {
+  background-color: rgb(82, 124, 238);
+}
+
+.button__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 520px;
+}
+
+.button {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2em;
+  width: 80%;
+  margin-top: 30px;
+  color: rgb(240, 178, 46);
+  background: rgb(11, 13, 158);
+  border: none;
+  box-shadow: 0px 4px rgb(81, 80, 82);
+  transition: 0.2s all;
+  border-radius: 5px;
+}
+
+.button:active {
+  transform: translateY(2px);
+  box-shadow: 0px 0px #555457;
+}
